@@ -10,19 +10,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:alpine
-        env:
-          POSTGRES_DB: testing
-          POSTGRES_USER: testing
-          POSTGRES_PASSWORD: testing
-        ports:
-          - 5432:5432
-      mongo:
-        image: mongo
-        ports:
-          - 27017:27017
 
     steps:
       - name: Dump GitHub context
