@@ -1,0 +1,7 @@
+name: 'test action'
+author: Javi Fontan
+description: 'test'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
